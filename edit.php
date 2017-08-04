@@ -27,9 +27,9 @@ function getDirContents($dir, &$files_path = array())
 $count = 0;
 foreach (getDirContents(__DIR__) as $key => $path) {
 
-    $search_string = '<html><!--Test-->';
+    $search_string = 'str1';
 
-    $replace_string = '<html>';
+    $replace_string = 'str2';
 
     $content_file = file_get_contents($path);
     $content_new = str_replace($search_string, $replace_string, $content_file);
