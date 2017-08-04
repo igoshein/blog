@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Site - 16 инструментов для HighLoad</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <style> * { opacity: 0; } </style>
+    <link rel="stylesheet" href="/css/style.css" media="bogus">
+</head>
+<body>
+<link rel="stylesheet" href="/css/style.css"/>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <div class="name">Site Home</div>
+                <div class="profession">
+                    <span>Web</span>
+                    <span>Development</span>
+                </div>
+            </a>
+        </div>
+        <nav class="menu">
+            <a href="/">HighLoad</a>
+            <a href="/">PHP</a>
+            <a href="/">MySQL</a>
+            <a href="/">PostgreSQL</a>
+            <a href="/">NoSQL</a>
+            <a href="/">Tools</a>
+            <a href="/">Linux</a>
+        </nav>
+    </div>
+</header>
+<article>
+    <div class="container">
+        <div class="content">
+            <h1>16 инструментов для разработки HighLoad</h1>
+            <ul>
+                <li>1. Сервисно-ориентированная архитектура.</li>
+                <li>2. Вертикальное масштабирование.</li>
+                <li>3. Горизонтальное масштабирование. Не храним состояние, не держим общих узлов.</li>
+                <li>4. Отложенные вычисления.</li>
+                <li>5. Асинхронная обработка.</li>
+                <li>6. Использование толстого клиента.</li>
+                <li>7. Кеширование.</li>
+                <li>8. Функциональное разделение.</li>
+                <li>9. Шардинг.</li>
+                <li>10. Виртуальные шарды. Физически сервер еще один, но логически вы уже шардите, а затем по необходимости разносите.</li>
+                <li>11. Центральный диспетчер. Логика шардинга.</li>
+                <li>12. Репликация.</li>
+                <li>13. Партицинионирование.</li>
+                <li>14. Денормализация.</li>
+                <li>15. Введение избыточности.</li>
+                <li>16. Параллельное выполнение. Не путать с многопоточным.</li>
+            </ul>
+            <pre class="php" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">&lt;?php</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">function</span> fact<span style="color: #009900;">&#40;</span><span style="color: #000088;">$n</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$n</span> <span style="color: #339933;">===</span> <span style="color: #cc66cc;">0</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span> <span style="color: #666666; font-style: italic;">// our base case</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">     <span style="color: #b1b100;">return</span> <span style="color: #cc66cc;">1</span><span style="color: #339933;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #b1b100;">else</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">     <span style="color: #b1b100;">return</span> <span style="color: #000088;">$n</span> <span style="color: #339933;">*</span> fact<span style="color: #009900;">&#40;</span><span style="color: #000088;">$n</span><span style="color: #339933;">-</span><span style="color: #cc66cc;">1</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// &lt;--calling itself.</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&#125;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&#125;</span></div></li></ol></pre>
+            <img src="/img/test/factory.jpg" alt="factory">
+        </div>
+    </div>
+</article>
+<footer>
+    <div class="container">
+        <!--<a href="/page/example">About</a>-->
+        <!--<a href="/page/example">Contact</a>-->
+        <a href="https://github.com/igoshein">GitHub</a>
+    </div>
+</footer>
+</body>
+</html>

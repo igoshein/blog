@@ -1,0 +1,245 @@
+* {
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    color: #111;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, Tahoma, sans-serif;
+}
+
+html {
+    overflow-y: scroll;
+}
+/*************** common styles ****************/
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header .container,
+footer .container {
+    padding: 0 15px;
+}
+
+header .logo a,
+header .menu a,
+footer a {
+    text-transform: uppercase;
+}
+
+header .menu a,
+footer a {
+    margin-right: 15px;
+    font-size: 15px;
+}
+header .menu a:hover,
+footer a:hover {
+    border-bottom: 1px solid #111;
+}
+
+header .logo .profession span,
+article .item div a span {
+    color: #666;
+}
+/*************** common styles ****************/
+
+
+/******************* header *********************/
+header {
+    height: 120px;
+    border-bottom: 1px solid #eee;
+}
+header a {
+    cursor: pointer;
+}
+
+header .logo {
+    padding-top: 28px;
+}
+header .logo a {
+    transition: opacity 0.2s;
+}
+header .logo a:hover div {
+    opacity: 0.7;
+}
+header .logo .name {
+    float: left;
+    margin-right: 5px;
+    font-size: 25px;
+}
+header .logo .profession {
+    float: left;
+    margin-top: 3px;
+    line-height: 1.1;
+    font-size: 10px;
+}
+header .logo .profession span {
+    display: block;
+}
+header .logo .profession span:first-child {
+    position: relative;
+    top: 1px;
+}
+
+header .menu {
+    clear: both;
+    padding-top: 20px;
+}
+/******************* header *********************/
+
+
+/******************* article ********************/
+article {
+    min-height: calc(100vh - 200px);
+}
+
+article .item {
+    padding-top: 20px;
+    overflow: hidden;
+}
+article .item div {
+    width: 280px;
+    float: left;
+    margin: 0 0 15px 0;
+    box-sizing: border-box;
+    transition: opacity 0.2s;
+}
+article .item div:hover {
+    opacity: 0.7;
+}
+article .item div img,
+article .item div span {
+    display: block;
+    margin: 0 auto;
+}
+article .item div img {
+    width: auto;
+}
+article .item div img.test-img {
+    width: 250px;
+    height: 155px;
+}
+article .item div span {
+    width: 250px;
+    height: 34px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+article .content {
+    padding: 20px 15px;
+    box-sizing: inherit;
+}
+article .content h1 {
+    margin-bottom: 20px;
+}
+article .content p,
+article .content img {
+    margin: 10px 0;
+}
+article .content img {
+    width: 100%;
+}
+article .content,
+article .content img {
+    max-width: 750px;
+}
+article .content ul {
+    margin: 15px 0 15px 17px;
+}
+article .content pre.php {
+    padding: 10px 0 10px 35px;
+    background: #f9f9f9;
+}
+/******************* article ********************/
+
+
+/******************* footer *********************/
+footer {
+    height: 80px;
+    border-top: 1px solid #eee;
+}
+footer .container {
+    padding-top: 28px;
+}
+/******************* footer *********************/
+
+
+/******************* Media **********************/
+@media (max-width: 1399px) {
+    /*************** common Styles ****************/
+    .container {
+        width: 1120px;
+    }
+}
+
+@media (max-width: 1119px) {
+    /*************** common Styles ****************/
+    .container {
+        width: 840px;
+    }
+}
+
+@media (max-width: 839px) {
+    /*************** common Styles ****************/
+    .container {
+        width: 560px;
+    }
+}
+
+@media (max-width: 559px) {
+    /*************** common Styles ****************/
+    .container,
+    article .item {
+        width: 280px;
+    }
+
+    header .container,
+    article .container {
+        width: 100%;
+    }
+    /*************** common Styles ****************/
+
+    /***************** header *******************/
+    header .logo {
+        padding-top: 15px;
+    }
+
+    header .menu {
+        clear: both;
+        padding-top: 10px;
+    }
+    header .menu a {
+        line-height: 27px;
+    }
+    /***************** header *******************/
+
+    /***************** article ******************/
+    article .item {
+        margin: 0 auto;
+    }
+    /***************** article ******************/
+
+    /***************** footer *******************/
+    footer .container {
+        padding: 28px 0 0 0;
+        text-align: center;
+    }
+    footer .container a {
+        margin: 0 15px;
+    }
+    /***************** footer *******************/
+}
+
+
+@media (max-width: 374px) {
+    header {
+        height: 140px;
+    }
+
+    article {
+        min-height: calc(100vh - 220px);
+    }
+}
+/******************* Media **********************/
