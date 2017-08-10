@@ -37,6 +37,8 @@
     <div class="container">
         <div class="content">
             <h1>16 инструментов для разработки HighLoad</h1>
+            <p>Сервис-ориентированная архитектура (SOA, англ. service-oriented architecture) — <a href="#">модульный</a> подход к разработке программного обеспечения, основанный на использовании распределённых, слабо связанных (англ. loose coupling) заменяемых компонентов, оснащённых стандартизированными интерфейсами для взаимодействия по стандартизированным протоколам.</p>
+            <p>Программные комплексы, разработанные в соответствии с <a href="#">сервис-ориентированной архитектурой</a>, обычно реализуются как набор веб-служб, взаимодействующих по протоколу SOAP, но существуют и другие реализации (например, на базе jini, <a href="#">CORBA</a>, на основе REST).</p>
             <ul>
                 <li>1. Сервисно-ориентированная архитектура.</li>
                 <li>2. Вертикальное масштабирование.</li>
@@ -57,13 +59,16 @@
             </ul>
             <pre class="php" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">&lt;?php</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">function</span> fact<span style="color: #009900;">&#40;</span><span style="color: #000088;">$n</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$n</span> <span style="color: #339933;">===</span> <span style="color: #cc66cc;">0</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span> <span style="color: #666666; font-style: italic;">// our base case</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">     <span style="color: #b1b100;">return</span> <span style="color: #cc66cc;">1</span><span style="color: #339933;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #b1b100;">else</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">     <span style="color: #b1b100;">return</span> <span style="color: #000088;">$n</span> <span style="color: #339933;">*</span> fact<span style="color: #009900;">&#40;</span><span style="color: #000088;">$n</span><span style="color: #339933;">-</span><span style="color: #cc66cc;">1</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// &lt;--calling itself.</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&#125;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&#125;</span></div></li></ol></pre>
             <img src="/img/test/factory.jpg" alt="factory">
+            <h3>Related Posts:</h3>
+            <a href="/page/high-load-architecture">Сервисно-ориентированная архитектура.</a><br>
+            <a href="/page/high-load-architecture">Параллельное выполнение потоков</a>
         </div>
     </div>
 </article>
 <footer>
     <div class="container">
-        <!--<a href="/page/example">About</a>-->
-        <a href="/page/contact">Contact</a>
+        <a href="#/page/about">About</a>
+        <a href="#/page/contact">Contact</a>
         <a href="https://github.com/igoshein">GitHub</a>
     </div>
 </footer>

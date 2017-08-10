@@ -1,7 +1,5 @@
 * {
     opacity: 1;
-    margin: 0;
-    padding: 0;
     color: #111;
     box-sizing: border-box;
     text-decoration: none;
@@ -10,6 +8,10 @@
 
 html {
     overflow-y: scroll;
+}
+body {
+    margin: 0;
+    padding: 0;
 }
 /*************** common styles ****************/
 .container {
@@ -130,13 +132,6 @@ article .content {
     padding: 20px 15px;
     box-sizing: inherit;
 }
-article .content h1 {
-    margin-bottom: 20px;
-}
-article .content p,
-article .content img {
-    margin: 10px 0;
-}
 article .content img {
     width: 100%;
 }
@@ -144,11 +139,11 @@ article .content,
 article .content img {
     max-width: 750px;
 }
-article .content ul {
-    margin: 15px 0 15px 17px;
+article .content a {
+    color: #0645ad;
 }
-article .content pre.php {
-    padding: 10px 0 10px 35px;
+article .content a:hover {
+    text-decoration: underline;
 }
 /******************* article ********************/
 
