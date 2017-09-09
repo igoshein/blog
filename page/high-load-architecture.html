@@ -18,7 +18,7 @@
                 <div class="name">Site Home</div>
                 <div class="profession">
                     <span>Web</span>
-                    <span>Development</span>
+                    <span>Developer</span>
                 </div>
             </a>
         </div>
@@ -28,8 +28,8 @@
             <a href="/">MySQL</a>
             <a href="/">PostgreSQL</a>
             <a href="/">NoSQL</a>
-            <a href="/">Tools</a>
             <a href="/">Linux</a>
+            <a href="/">Other</a>
         </nav>
     </div>
 </header>
@@ -57,12 +57,24 @@
                 <li>15. Введение избыточности.</li>
                 <li>16. Параллельное выполнение. Не путать с многопоточным.</li>
             </ul>
-            <pre class="php" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">&lt;?php</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000000; font-weight: bold;">function</span> fact<span style="color: #009900;">&#40;</span><span style="color: #000088;">$n</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$n</span> <span style="color: #339933;">===</span> <span style="color: #cc66cc;">0</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span> <span style="color: #666666; font-style: italic;">// our base case</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">     <span style="color: #b1b100;">return</span> <span style="color: #cc66cc;">1</span><span style="color: #339933;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #b1b100;">else</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">     <span style="color: #b1b100;">return</span> <span style="color: #000088;">$n</span> <span style="color: #339933;">*</span> fact<span style="color: #009900;">&#40;</span><span style="color: #000088;">$n</span><span style="color: #339933;">-</span><span style="color: #cc66cc;">1</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">// &lt;--calling itself.</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&#125;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&#125;</span></div></li></ol></pre>
+            <pre class="test">
+&lt;?php
+
+function fact($n) {
+  if ($n === 0) { // our base case
+     return 1;
+  }
+  else {
+     return $n * fact($n-1); // <--calling itself.
+  }
+}
+            </pre>
             <img src="/img/test/factory.jpg" alt="factory">
             <h3>Related Posts:</h3>
             <a href="/page/high-load-architecture">Сервисно-ориентированная архитектура.</a><br>
             <a href="/page/high-load-architecture">Параллельное выполнение потоков</a>
         </div>
+        <div class="sidebar"></div>
     </div>
 </article>
 <footer>

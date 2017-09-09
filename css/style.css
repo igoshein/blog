@@ -131,6 +131,7 @@ article .item div span {
 article .content {
     padding: 20px 15px;
     box-sizing: inherit;
+    float: left;
 }
 article .content img {
     width: 100%;
@@ -145,11 +146,27 @@ article .content a {
 article .content a:hover {
     text-decoration: underline;
 }
+
+article .content pre {
+    display: block;
+    padding: 15px 15px 0 15px;
+    background: #272822;
+    color: #fff;
+    font-family: Monaco, "Courier New", Courier, mono;
+    font-size: 12px;
+    overflow: auto;
+}
+
+article .content,
+article .sidebar {
+    float: left;
+}
 /******************* article ********************/
 
 
 /******************* footer *********************/
 footer {
+    clear: both;
     height: 80px;
     border-top: 1px solid #eee;
 }
